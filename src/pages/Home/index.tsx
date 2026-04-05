@@ -29,6 +29,7 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
+        id="middle"
       />
       <ContentBlock
         direction="left"
