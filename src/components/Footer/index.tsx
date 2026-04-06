@@ -2,6 +2,7 @@ import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 import i18n from "i18next";
 import {
@@ -110,7 +111,11 @@ const Footer = ({ t }: { t: TFunction }) => {
           </Row>*/}
         </Container>
       </FooterSection>
-      <Extra></Extra>
+      <Extra>
+          <TawkMessengerReact
+                propertyId="69d4074273edbb1c3aab02fe/1jli3oncb"
+                widgetId="default"/>
+                </Extra>
       {/*
         <Container border={true}>
           <Row
