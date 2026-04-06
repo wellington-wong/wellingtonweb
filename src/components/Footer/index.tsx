@@ -113,7 +113,7 @@ const Footer = ({ t }: { t: TFunction }) => {
       </FooterSection>
       <Extra>
           <TawkMessengerReact
-                propertyId="69d4074273edbb1c3aab02fe/1jli3oncb"
+                propertyId="69d40991b0cccb1c3b0d06e6"
                 widgetId="default"/>
                 </Extra>
       {/*
