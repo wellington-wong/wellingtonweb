@@ -15,11 +15,10 @@ interface MiddleBlockProps {
 
 const images = [
    {
-      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+      src: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
       width: 320,
       height: 174,
-      isSelected: true,
-      caption: "After Rain (Jeshu John - designerspics.com)",
+      caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
    },
    {
       src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
@@ -59,6 +58,7 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
                 </Button>
               )}
             </Col>
+            <Gallery images={images} enableImageSelection={false} />
           </ContentWrapper>
         </Row>
       </Slide>
