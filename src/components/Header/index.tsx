@@ -24,7 +24,6 @@ const Header = ({ t }: { t: TFunction }) => {
     setVisibility(!visible);
   };
 
-  const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
@@ -32,6 +31,7 @@ const Header = ({ t }: { t: TFunction }) => {
       });
       setVisibility(false);
     };
+  const MenuItem = () => {
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("middle")}>
@@ -59,10 +59,12 @@ const Header = ({ t }: { t: TFunction }) => {
     <HeaderSection>
       <Container>
         <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
-            <LogoH1>Wellington's</LogoH1>
-            <LogoH3>Portfolio</LogoH3>
-          </LogoContainer>
+          <CustomNavLinkSmall onClick={() => scrollTo("intro")}>
+            <LogoContainer to="/" aria-label="homepage">
+              <LogoH1>Wellington's</LogoH1>
+              <LogoH3>Portfolio</LogoH3>
+            </LogoContainer>
+          </CustomNavLinkSmall>
           <NotHidden>
             <MenuItem />
           </NotHidden>

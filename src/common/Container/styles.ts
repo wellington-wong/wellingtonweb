@@ -26,4 +26,8 @@ export const StyledContainer = styled("div")<{
     max-width: 100%;
     padding: 0 18px;
   }
+
+  #intro, #middle, #about, #mission, #product, #contact {
+    padding-top: 10rem;
+  }
 `;

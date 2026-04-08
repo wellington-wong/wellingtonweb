@@ -59,7 +59,6 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
                 </Button>
               )}
             </Col>
-            <Gallery images={images} />
           </ContentWrapper>
         </Row>
       </Slide>
