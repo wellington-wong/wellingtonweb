@@ -65,8 +65,7 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Language>{t("Address")}</Language>
-              <Para>North Fairview, Quezon City</Para>
-              <Para>Metro Manila, Philippines 1121</Para>
+              <Para>Quezon City, Philippines</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
