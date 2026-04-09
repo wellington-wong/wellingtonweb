@@ -28,7 +28,12 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    const emailJsCreds = {
+      service_id: 'service_5a212hi',
+      template_id: 'template_p1tl76a',
+      user_id: 'SLLhLb-xN-B9f1t8M',
+    }
+    const url = "https://api.emailjs.com/api/v1.0/email/send"; // Fill in your API URL here
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
@@ -37,7 +42,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(values),
+          body: JSON.stringify({ ...emailJsCreds, template_params: {...values} }),
         });
 
         if (!response.ok) {
@@ -60,10 +65,10 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
         }
       }
     } catch (error) {
-      notification["error"]({
+      /*notification["error"]({
         message: "Error",
         description: "Failed to submit form. Please try again later.",
-      });
+      });*/
     }
   };
 
