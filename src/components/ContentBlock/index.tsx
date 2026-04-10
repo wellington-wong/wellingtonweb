@@ -50,18 +50,18 @@ const ContentBlock = ({
     '/img/logos/html5.png',
     '/img/logos/css3.png',
   ].map((icon) => {
-   return <a
-      href="javascript: void(0)"
-      target="_self"
-      rel="noopener"
-    >
-      <img
+   return <img
         height="108"
         width="108"
         alt=""
         src={icon}
       />
-    </a>
+    /*<a
+      href="javascript: void(0)"
+      target="_self"
+      rel="noopener"
+    >
+    </a>*/
   })
 
   return (
