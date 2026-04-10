@@ -30,4 +30,8 @@ export const StyledContainer = styled("div")<{
   #intro, #middle, #about, #mission, #product, #contact {
     padding-top: 10rem;
   }
+
+  #mission canvas {
+    max-width: none !important
+  }
 `;
