@@ -16,7 +16,7 @@ import {
   StyledRow,
   ButtonWrapper,
 } from "./styles";
-import {Cloud, renderSimpleIcon} from 'react-icon-cloud'
+import {Cloud} from 'react-icon-cloud'
 
 const ContentBlock = ({
   icon,
