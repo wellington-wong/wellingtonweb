@@ -32,15 +32,6 @@ const Home = () => {
         id="middle"
       />
       <ContentBlock
-        direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        icon="graphs.svg"
-        image="my_profile.jpg"
-        id="about"
-      />
-      <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
@@ -50,12 +41,21 @@ const Home = () => {
       />
       <ContentBlock
         direction="left"
+        title={AboutContent.title}
+        content={AboutContent.text}
+        section={AboutContent.section}
+        icon="graphs.svg"
+        image="my_profile.jpg"
+        id="about"
+      />
+      {/*<ContentBlock
+        direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
         icon="waving.svg"
         image="satisfaction.png"
         id="product"
-      />
+      />*/}
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}

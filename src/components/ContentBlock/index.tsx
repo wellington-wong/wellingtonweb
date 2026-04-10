@@ -51,14 +51,14 @@ const ContentBlock = ({
     '/img/logos/css3.png',
   ].map((icon) => {
    return <a
-      href="https://emojipedia.org/globe-showing-americas/"
-      target="_blank"
+      href="javascript: void(0)"
+      target="_self"
       rel="noopener"
     >
       <img
-        height="88"
-        width="88"
-        alt="A globe"
+        height="108"
+        width="108"
+        alt=""
         src={icon}
       />
     </a>
@@ -75,8 +75,9 @@ const ContentBlock = ({
         >
           <Col lg={11} md={11} sm={12} xs={24}>
             {/*<SvgIcon src={icon} width="100%" height="100%" />*/}
-
-            <Cloud>{ icons }</Cloud>
+            
+            {id=='mission'?<Cloud options={{ wheelZoom: false, initial: [0.078, 0.078] }}>{ icons }</Cloud>:<Image src={image} width="100%" height="100%" />}
+            
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -97,7 +98,7 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={() => scrollTo("mission")}
                           >
                             {t(item.title)}
                           </Button>
