@@ -22,7 +22,7 @@ const Home = () => {
         content={IntroContent.text}
         button={IntroContent.button}
         icon="developer.svg"
-        image="success-cartoon.jpg"
+        image="success-cartoon-opt.jpg"
         id="intro"
       />
       <MiddleBlock
