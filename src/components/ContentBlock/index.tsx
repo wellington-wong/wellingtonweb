@@ -37,31 +37,31 @@ const ContentBlock = ({
   };
 
   const icons = [
-    '/img/logos/laravel.png',
-    '/img/logos/wordpress.png',
-    '/img/logos/react.png',
-    '/img/logos/jquery.png',
-    '/img/logos/mysql.png',
-    '/img/logos/bootstrap.png',
-    '/img/logos/woocommerce.png',
-    '/img/logos/drupal.png',
-    '/img/logos/mongodb.png',
-    '/img/logos/photoshop.png',
-    '/img/logos/html5.png',
-    '/img/logos/css3.png',
-  ].map((icon) => {
-   return <img
-        height="108"
-        width="108"
-        alt=""
-        src={icon}
-      />
-    /*<a
-      href="javascript: void(0)"
+    {path: '/img/logos/laravel.png', url: 'https://laravel.com'},
+    {path: '/img/logos/wordpress.png', url: 'https://wordpress.org'},
+    {path: '/img/logos/react.png', url: 'https://react.dev'},
+    {path: '/img/logos/jquery.png', url: 'https://jquery.com'},
+    {path: '/img/logos/mysql.png', url: 'https://www.mysql.com'},
+    {path: '/img/logos/bootstrap.png', url: 'https://getbootstrap.com'},
+    {path: '/img/logos/woocommerce.png', url: 'https://woocommerce.com'},
+    {path: '/img/logos/drupal.png', url: 'https://new.drupal.org/home'},
+    {path: '/img/logos/mongodb.png', url: 'https://www.mongodb.com'},
+    {path: '/img/logos/photoshop.png', url: 'https://www.adobe.com/ph_en/products/photoshop.html'},
+    {path: '/img/logos/html5.png', url: 'https://en.wikipedia.org/wiki/HTML5'},
+    {path: '/img/logos/css3.png', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'},
+  ].map((logo) => {
+   return <a
+      href={logo.url}
       target="_self"
       rel="noopener"
     >
-    </a>*/
+      <img
+        height="108"
+        width="108"
+        alt=""
+        src={logo.path}
+      />
+    </a>
   })
 
   return (
@@ -76,7 +76,7 @@ const ContentBlock = ({
           <Col lg={11} md={11} sm={12} xs={24}>
             {/*<SvgIcon src={icon} width="100%" height="100%" />*/}
             
-            {id=='mission'?<Cloud options={{ wheelZoom: false, initial: [0.018, 0.018] }}>{ icons }</Cloud>:<Image src={image} width="100%" height="100%" />}
+            {id==='mission'?<Cloud options={{ wheelZoom: false, initial: [0.018, 0.018] }}>{ icons }</Cloud>:<Image src={image} width="100%" height="100%" />}
             
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
