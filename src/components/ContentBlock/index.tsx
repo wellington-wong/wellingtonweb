@@ -16,6 +16,7 @@ import {
   StyledRow,
   ButtonWrapper,
 } from "./styles";
+import {Cloud, renderSimpleIcon} from 'react-icon-cloud'
 
 const ContentBlock = ({
   icon,
@@ -35,6 +36,34 @@ const ContentBlock = ({
     });
   };
 
+  const icons = [
+    '/img/logos/laravel.png',
+    '/img/logos/wordpress.png',
+    '/img/logos/react.png',
+    '/img/logos/jquery.png',
+    '/img/logos/mysql.png',
+    '/img/logos/bootstrap.png',
+    '/img/logos/woocommerce.png',
+    '/img/logos/drupal.png',
+    '/img/logos/mongodb.png',
+    '/img/logos/photoshop.png',
+    '/img/logos/html5.png',
+    '/img/logos/css3.png',
+  ].map((icon) => {
+   return <a
+      href="https://emojipedia.org/globe-showing-americas/"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        height="88"
+        width="88"
+        alt="A globe"
+        src={icon}
+      />
+    </a>
+  })
+
   return (
     <ContentSection>
       <Fade direction={direction} triggerOnce>
@@ -46,7 +75,8 @@ const ContentBlock = ({
         >
           <Col lg={11} md={11} sm={12} xs={24}>
             {/*<SvgIcon src={icon} width="100%" height="100%" />*/}
-            <Image src={image} width="100%" height="100%" />
+
+            <Cloud>{ icons }</Cloud>
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
