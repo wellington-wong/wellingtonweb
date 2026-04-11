@@ -41,6 +41,9 @@ export const StyledContainer = styled("div")<{
   #middle > div {
     max-width: 1080px !important
   }
+  #middle p {
+    text-align: left;
+  }
 
 
 
