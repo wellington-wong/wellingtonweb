@@ -34,4 +34,14 @@ export const StyledContainer = styled("div")<{
   #mission canvas {
     max-width: none !important
   }
+
+  #middle {
+    display: block;
+  }
+  #middle > div {
+    max-width: 1080px !important
+  }
+
+
+
 `;

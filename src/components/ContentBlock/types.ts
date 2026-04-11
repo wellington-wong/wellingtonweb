@@ -18,7 +18,7 @@ export interface ContentBlockProps {
     | {
         title: string;
         color: string;
-        scrollto: string;
+        scrollto: string; 
       }
   )[];
   t: TFunction;

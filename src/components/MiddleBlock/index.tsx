@@ -3,7 +3,10 @@ import { withTranslation, TFunction } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
-import { Gallery } from "react-grid-gallery";
+//import { Gallery } from "react-grid-gallery";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/image-gallery.css";
+import type { GalleryItem } from "react-image-gallery";
 
 interface MiddleBlockProps {
   title: string;
@@ -13,7 +16,7 @@ interface MiddleBlockProps {
   id: string;
 }
 
-const images = [
+/*const images = [
    {
       src: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
       width: 320,
@@ -35,6 +38,21 @@ const images = [
       width: 320,
       height: 212,
    },
+];*/
+
+const images2: GalleryItem[] = [
+  {
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
 ];
 
 const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
@@ -51,6 +69,10 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6>{t(title)}</h6>
+              <ImageGallery
+                items={[...images2, ...images2, ...images2, ...images2, ...images2]}
+                onSlide={(index) => console.log("Slid to", index)}
+              />
               <Content>{t(content)}</Content>
               {button && (
                 <Button name="submit" onClick={() => scrollTo("mission")}>
@@ -58,7 +80,7 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
                 </Button>
               )}
             </Col>
-            <Gallery images={images} enableImageSelection={false} />
+            {/*<Gallery images={images} enableImageSelection={false} />*/}
           </ContentWrapper>
         </Row>
       </Slide>

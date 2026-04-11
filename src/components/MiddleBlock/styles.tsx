@@ -4,7 +4,8 @@ export const MiddleBlockSection = styled("section")`
   position: relative;
   padding: 0rem 0 3rem;
   text-align: center;
-  display: flex;
+  /*display: flex;*/
+  display: block;
   justify-content: center;
 
   @media screen and (max-width: 1024px) {
