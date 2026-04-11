@@ -56,8 +56,8 @@ const ContentBlock = ({
       rel="noreferrer"
     >
       <img
-        height="128"
-        width="128"
+        height="118"
+        width="118"
         alt=""
         src={logo.path}
       />
