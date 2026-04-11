@@ -42,16 +42,24 @@ interface MiddleBlockProps {
 
 const images2: GalleryItem[] = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "/img/website-portfolio/1faa9ddf887b25c337896ca5bccc8c700389146f.png",
+    thumbnail: "/img/website-portfolio/1faa9ddf887b25c337896ca5bccc8c700389146f.png",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
+    thumbnail: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "/img/website-portfolio/2cc75676c06cef0ccf17556ee83621b670866a91.png",
+    thumbnail: "/img/website-portfolio/2cc75676c06cef0ccf17556ee83621b670866a91.png",
+  },
+  {
+    original: "/img/website-portfolio/7db48b5525ef1eef8f840ee436ef58b4ef2eed53.png",
+    thumbnail: "/img/website-portfolio/7db48b5525ef1eef8f840ee436ef58b4ef2eed53.png",
+  },
+  {
+    original: "/img/website-portfolio/9b82a6247933df06d95a80acaf5e919adb6ff4bc.png",
+    thumbnail: "/img/website-portfolio/9b82a6247933df06d95a80acaf5e919adb6ff4bc.png",
   },
 ];
 
