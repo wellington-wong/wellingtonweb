@@ -56,8 +56,8 @@ const ContentBlock = ({
       rel="noreferrer"
     >
       <img
-        height="108"
-        width="108"
+        height="128"
+        width="128"
         alt=""
         src={logo.path}
       />
@@ -76,7 +76,7 @@ const ContentBlock = ({
           <Col lg={11} md={11} sm={12} xs={24}>
             {/*<SvgIcon src={icon} width="100%" height="100%" />*/}
             
-            {id==='mission'?<Cloud options={{ wheelZoom: false, initial: [0.018, 0.018], freezeActive: true, outlineMethod: 'none' }}>{ icons }</Cloud>:<Image src={image} width="100%" height="100%" />}
+            {id==='mission'?<Cloud options={{ wheelZoom: false, initial: [0.038, 0.038], freezeActive: true, outlineMethod: 'none' }}>{ icons }</Cloud>:<Image src={image} width="100%" height="100%" />}
             
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
