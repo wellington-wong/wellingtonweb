@@ -49,11 +49,11 @@ const ContentBlock = ({
     {path: '/img/logos/photoshop.png', url: 'https://www.adobe.com/ph_en/products/photoshop.html'},
     {path: '/img/logos/html5.png', url: 'https://en.wikipedia.org/wiki/HTML5'},
     {path: '/img/logos/css3.png', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'},
-  ].map((logo) => {
+  ].sort(()=>Math.random() - .8).map((logo) => {
    return <a
       href={logo.url}
       target="_blank"
-      rel="noopener"
+      rel="noreferrer"
     >
       <img
         height="108"
@@ -63,7 +63,7 @@ const ContentBlock = ({
       />
     </a>
   })
-
+  
   return (
     <ContentSection>
       <Fade direction={direction} triggerOnce>
