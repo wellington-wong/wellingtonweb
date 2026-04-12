@@ -1,9 +1,9 @@
 {
-  "title": "Landing page template for developers and startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Full-Stack Developer for Web & Mobile Solutions",
+  "text": "I specialize in building fast, reliable, and user-friendly websites and mobile applications tailored to your needs—from concept to deployment.",
   "button": [
     {
-      "title": "Explore",
+      "title": "View My Work",
       "scrollto": "middle"
     },
     {
