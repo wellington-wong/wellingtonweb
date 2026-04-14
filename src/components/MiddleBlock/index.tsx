@@ -44,6 +44,7 @@ const images2: GalleryItem[] = [
   {
     original: "/img/website-portfolio/chopinlawfirm.jpg",
     thumbnail: "/img/website-portfolio/chopinlawfirm-thumb.jpg",
+    description: "<div></div>"
   },
   {
     original: "/img/website-portfolio/coolairflorida.jpg",
@@ -111,7 +112,6 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <ImageGallery
                 items={images2.sort(()=>Math.random() - .8)}
-                onSlide={(index) => console.log("Slid to", index)}
               />
               <Content>{t(content)}</Content>
               {button && (
