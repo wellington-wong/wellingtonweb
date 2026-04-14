@@ -7,6 +7,9 @@ export const HeaderSection = styled("header")`
   .ant-row-space-between {
     align-items: center;
     text-align: center;
+    > div {
+      margin: 0;
+    }
   }
   position: fixed;
   width: 100%;
@@ -29,6 +32,10 @@ export const LogoH3 = styled("h3")`
   font-size: 20px;
   margin: 0;
   color: #096192;
+`;
+
+export const LogoImg = styled("img")`
+  width: 280px;
 `;
 
 export const NavLink = styled("div")`

@@ -8,6 +8,7 @@ import {
   LogoContainer,
   LogoH1,
   LogoH3,
+  LogoImg,
   Burger,
   NotHidden,
   Menu,
@@ -58,11 +59,12 @@ const Header = ({ t }: { t: TFunction }) => {
   return (
     <HeaderSection>
       <Container>
-        <Row justify="space-between">
+        <Row justify="space-between" gutter={0}>
           <CustomNavLinkSmall onClick={() => scrollTo("intro")}>
             <LogoContainer to="/" aria-label="homepage">
-              <LogoH1>Wellington's</LogoH1>
-              <LogoH3>Portfolio</LogoH3>
+              {/*<LogoH1>Wellington's</LogoH1>
+              <LogoH3>Portfolio</LogoH3>*/}
+              <LogoImg src="/img/logo-v2.png" />
             </LogoContainer>
           </CustomNavLinkSmall>
           <NotHidden>
