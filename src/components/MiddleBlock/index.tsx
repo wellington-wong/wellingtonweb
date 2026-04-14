@@ -42,24 +42,56 @@ interface MiddleBlockProps {
 
 const images2: GalleryItem[] = [
   {
-    original: "/img/website-portfolio/1faa9ddf887b25c337896ca5bccc8c700389146f.png",
-    thumbnail: "/img/website-portfolio/1faa9ddf887b25c337896ca5bccc8c700389146f.png",
+    original: "/img/website-portfolio/chopinlawfirm.jpg",
+    thumbnail: "/img/website-portfolio/chopinlawfirm-thumb.jpg",
   },
   {
-    original: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
-    thumbnail: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
+    original: "/img/website-portfolio/coolairflorida.jpg",
+    thumbnail: "/img/website-portfolio/coolairflorida-thumb.jpg",
   },
   {
-    original: "/img/website-portfolio/2cc75676c06cef0ccf17556ee83621b670866a91.png",
-    thumbnail: "/img/website-portfolio/2cc75676c06cef0ccf17556ee83621b670866a91.png",
+    original: "/img/website-portfolio/dunlopmotorcycletires.jpg",
+    thumbnail: "/img/website-portfolio/dunlopmotorcycletires-thumb.jpg",
   },
   {
-    original: "/img/website-portfolio/7db48b5525ef1eef8f840ee436ef58b4ef2eed53.png",
-    thumbnail: "/img/website-portfolio/7db48b5525ef1eef8f840ee436ef58b4ef2eed53.png",
+    original: "/img/website-portfolio/dunlopprodealer.jpg",
+    thumbnail: "/img/website-portfolio/dunlopprodealer-thumb.jpg",
   },
   {
-    original: "/img/website-portfolio/9b82a6247933df06d95a80acaf5e919adb6ff4bc.png",
-    thumbnail: "/img/website-portfolio/9b82a6247933df06d95a80acaf5e919adb6ff4bc.png",
+    original: "/img/website-portfolio/dunlopracing.jpg",
+    thumbnail: "/img/website-portfolio/dunlopracing-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/flytropic.jpg",
+    thumbnail: "/img/website-portfolio/flytropic-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/genious.jpg",
+    thumbnail: "/img/website-portfolio/genious-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/kingroofing.jpg",
+    thumbnail: "/img/website-portfolio/kingroofing-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/nyccd.jpg",
+    thumbnail: "/img/website-portfolio/nyccd-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/ourhome.jpg",
+    thumbnail: "/img/website-portfolio/ourhome-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/smxconventioncenter.jpg",
+    thumbnail: "/img/website-portfolio/smxconventioncenter-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/sportscentral.jpg",
+    thumbnail: "/img/website-portfolio/sportscentral-thumb.jpg",
+  },
+  {
+    original: "/img/website-portfolio/stanleylaw.jpg",
+    thumbnail: "/img/website-portfolio/stanleylaw-thumb.jpg",
   },
 ];
 
@@ -78,7 +110,7 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6>{t(title)}</h6>
               <ImageGallery
-                items={[...images2, ...images2, ...images2, ...images2, ...images2]}
+                items={images2.sort(()=>Math.random() - .8)}
                 onSlide={(index) => console.log("Slid to", index)}
               />
               <Content>{t(content)}</Content>

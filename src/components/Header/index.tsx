@@ -6,8 +6,8 @@ import { Button } from "../../common/Button";
 import {
   HeaderSection,
   LogoContainer,
-  LogoH1,
-  LogoH3,
+  //LogoH1,
+  //LogoH3,
   LogoImg,
   Burger,
   NotHidden,
