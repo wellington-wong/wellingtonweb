@@ -13,6 +13,7 @@ import {
   ServiceWrapper,
   MinTitle,
   MinPara,
+  NewLine,
   StyledRow,
   ButtonWrapper,
 } from "./styles";
@@ -23,6 +24,7 @@ const ContentBlock = ({
   image,
   title,
   content,
+  markup,
   section,
   button,
   t,
@@ -83,6 +85,10 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
+              {markup?.map((string)=>
+                <NewLine>{string}</NewLine>
+              )}
+              
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&

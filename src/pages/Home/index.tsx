@@ -35,6 +35,7 @@ const Home = () => {
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
+        markup={MissionContent.markup}
         icon="product-launch.svg"
         image="rocket.png"
         id="mission"
