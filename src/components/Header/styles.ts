@@ -10,7 +10,7 @@ export const HeaderSection = styled("header")`
   }
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: #f5f5f5;
   z-index: 1;
 `;
 
