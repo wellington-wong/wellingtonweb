@@ -44,7 +44,7 @@ const images2: GalleryItem[] = [
   {
     original: "/img/website-portfolio/chopinlawfirm.jpg",
     thumbnail: "/img/website-portfolio/chopinlawfirm-thumb.jpg",
-    description: "<div></div>"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.|The Chopin Law Firm LLC|https://www.chopinlawfirm.com"
   },
   {
     original: "/img/website-portfolio/coolairflorida.jpg",
