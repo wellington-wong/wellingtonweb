@@ -12,7 +12,9 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
+
 const Home = () => {
+
   return (
     <Container>
       <ScrollToTop />
@@ -46,7 +48,7 @@ const Home = () => {
         content={AboutContent.text}
         section={AboutContent.section}
         icon="graphs.svg"
-        image="my_profile.jpg"
+        image="dev-photo.png"
         id="about"
       />
       {/*<ContentBlock
