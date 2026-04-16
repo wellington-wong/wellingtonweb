@@ -8,6 +8,14 @@ export const ContactContainer = styled("div")`
   }
 `;
 
+export const ContactContent = styled("div")`
+`;
+export const Content = styled("p")`
+`;
+export const Link = styled("a")`
+  color: #005B96;
+`;
+
 export const FormGroup = styled("form")`
   width: 100%;
   max-width: 520px;
@@ -30,7 +38,7 @@ export const ButtonContainer = styled("div")`
   text-align: end;
   position: relative;
 
-  @media only screen and (max-width: 414px) {
+  @media only screen and (max-width: 418px) {
     padding-top: 0.75rem;
   }
 `;

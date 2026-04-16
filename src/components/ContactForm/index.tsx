@@ -8,7 +8,8 @@ import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
-import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
+import { Content, ContactContainer, ContactContent, FormGroup, Link, Span, ButtonContainer } from "./styles";
+import { LinkedinFilled, MailFilled, PhoneFilled } from '@ant-design/icons';
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
@@ -28,6 +29,14 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
+          <ContactContent className="contact-header">
+            <Content><strong>Contact me</strong></Content>
+          </ContactContent>
+          <ContactContent className="contact-info">
+            <Content><LinkedinFilled style={{ color: '#005B96 ' }} /> <Link href="https://www.linkedin.com/in/wellingtonwong" target="_blank">LinkedIn.com/in/wellingtonwong</Link></Content>
+            <Content><MailFilled style={{ color: '#005B96 ' }} /> <Link href="mailto:wellingtonwong@gmail.com" target="_blank">wellingtonwong@gmail.com</Link></Content>
+            <Content><PhoneFilled style={{ color: '#005B96 ' }} /> <Link href="tel:+639497692556" target="_blank">+63 949 769 2556</Link></Content>
+          </ContactContent>
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
                 <Input

@@ -28,7 +28,7 @@ export const ContentWrapper = styled("div")`
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-top: 3.99rem;
   }
 `;
 
