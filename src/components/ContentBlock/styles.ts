@@ -15,6 +15,8 @@ export const Content = styled("p")`
 `;
 export const NewLine = styled("div")`
 `;
+export const StyledLink = styled("a")`
+`;
 
 export const StyledRow = styled(Row)`
   flex-direction: ${({ direction }: { direction: string }) =>
@@ -34,6 +36,9 @@ export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  .ant-row {
+    flex: 0.3;
+  }
 `;
 
 export const MinTitle = styled("h6")`

@@ -7,7 +7,6 @@ export interface ContentBlockProps {
   markup?: String[];
   section?: {
     title: string;
-    content: string;
     icon: string;
   }[];
   button?: (

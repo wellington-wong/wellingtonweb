@@ -3,14 +3,14 @@
   "text": "I’m a developer passionate about creating digital solutions that make a difference. I build websites and mobile apps with a focus on simplicity, performance, and usability. I enjoy solving problems, learning new technologies, and bringing ideas to life through code.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+      "title": "",
+      "icon": "/logos/resume.png",
+      "href": "/pdf/Wellington_Wong_Resume_2026.pdf"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "",
+      "icon": "/logos/projects.png",
+      "href": "/pdf/Wellington_Wong_Portfolio_2026.pdf"
     }
   ]
 }

@@ -4,18 +4,19 @@ import { withTranslation } from "react-i18next";
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
-import { SvgIcon } from "../../common/SvgIcon";
+//import { SvgIcon } from "../../common/SvgIcon";
 import { Image } from "../../common/Image";
 import {
   ContentSection,
   Content,
   ContentWrapper,
   ServiceWrapper,
-  MinTitle,
-  MinPara,
+  //MinTitle,
+  //MinPara,
   NewLine,
   StyledRow,
   ButtonWrapper,
+  StyledLink,
 } from "./styles";
 import {Cloud} from 'react-icon-cloud';
 
@@ -124,21 +125,16 @@ const ContentBlock = ({
                       section.map(
                         (
                           item: {
-                            title: string;
-                            content: string;
                             icon: string;
+                            href?: string;
                           },
                           id: number
                         ) => {
                           return (
                             <Col key={id} span={11}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
+                              <StyledLink href={item.href} target="_blank">
+                                <Image src={item.icon} width="58px" height="auto" />
+                              </StyledLink>
                             </Col>
                           );
                         }
