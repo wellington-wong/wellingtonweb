@@ -4,7 +4,6 @@ import { InputProps } from "../types";
 
 const TextArea = ({ name, placeholder, onChange, t }: InputProps) => (
   <StyledContainer>
-    <Label htmlFor={name}>{t(name)}</Label>
     <StyledTextArea
       placeholder={t(placeholder)}
       id={name}
@@ -13,5 +12,6 @@ const TextArea = ({ name, placeholder, onChange, t }: InputProps) => (
     />
   </StyledContainer>
 );
+//<Label htmlFor={name}>{t(name)}</Label>
 
 export default withTranslation()(TextArea);
