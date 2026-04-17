@@ -19,6 +19,7 @@ import {
   StyledLink,
 } from "./styles";
 import {Cloud} from 'react-icon-cloud';
+import { GithubFilled } from '@ant-design/icons';
 
 const ContentBlock = ({
   icon,
@@ -93,7 +94,11 @@ const ContentBlock = ({
               {markup?.map((string)=>
                 <NewLine>{string}</NewLine>
               )}
-              
+            
+              {id==='mission'&&<Button name="submit" onClick={() => window.open("https://github.com/wellington-wong", '_blank') }>
+                <GithubFilled className="github-icon" />
+                {t('Visit my GitHub ')}
+              </Button>}
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&

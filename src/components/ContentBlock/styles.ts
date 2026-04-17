@@ -33,6 +33,11 @@ export const ContentWrapper = styled("div")`
   @media only screen and (max-width: 575px) {
     padding-top: 3.99rem;
   }
+
+  .github-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
 `;
 
 export const ServiceWrapper = styled("div")`
