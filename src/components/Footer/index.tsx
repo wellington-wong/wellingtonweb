@@ -1,11 +1,12 @@
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
+//import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
-import i18n from "i18next";
+//import i18n from "i18next";
 import {
+  Copyright,
   FooterSection,
   //Title,
   //NavLink,
@@ -13,13 +14,14 @@ import {
   //LogoContainer,
   Para,
   //Large,
-  Chat,
+  //Chat,
   //Empty,
   //FooterContainer,
   Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
+  //Label,
+  //LanguageSwitch,
+  //LanguageSwitchContainer,
+  NewLink,
 } from "./styles";
 
 /*interface SocialLinkProps {
@@ -28,9 +30,9 @@ import {
 }*/
 
 const Footer = ({ t }: { t: TFunction }) => {
-  const handleChange = (language: string) => {
+  /*const handleChange = (language: string) => {
     i18n.changeLanguage(language);
-  };
+  };*/
 
   /*const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -54,39 +56,27 @@ const Footer = ({ t }: { t: TFunction }) => {
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact Me")}</Language>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+                {t(`Do you have any question? Feel free to react out.`)}
               </Para>
-              <a href="mailto:wellingtonwong@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
-              <a href="tel:+639497692556">
-                <Para>{t("+63 949 769 2556")}</Para>
-              </a>
+              <Para> 
+                <NewLink href="mailto:wellingtonwong@gmail.com">
+                  {t("wellingtonwong@gmail.com")}
+                </NewLink>
+              </Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Language>{t("Address")}</Language>
+              <Language>{t("Location")}</Language>
               <Para>Quezon City, Philippines</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
+              <Language>{t("Availability")}</Language>
+              <Para>9 AM – 6 PM (GMT+8)</Para>
+              <Para>Flexible for US EST overlap</Para>
+            </Col>
+          </Row>
+          <Row justify="space-between" className="copyright-wrapper">
+            <Col lg={22} md={22} sm={22} xs={22} offset={1}>
+              <Copyright>© 2026 Wellington Webpages</Copyright>
             </Col>
           </Row>
           {/*<Row justify="space-between">
@@ -112,9 +102,9 @@ const Footer = ({ t }: { t: TFunction }) => {
       </FooterSection>
       <Extra>
           <TawkMessengerReact
-                propertyId="69d40991b0cccb1c3b0d06e6"
-                widgetId="1jlnah6r7"/>
-                </Extra>
+            propertyId="69d40991b0cccb1c3b0d06e6"
+            widgetId="1jlnah6r7"/>
+      </Extra>
       {/*
         <Container border={true}>
           <Row
