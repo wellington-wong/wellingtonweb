@@ -133,7 +133,7 @@ const ContentBlock = ({
                           return (
                             <Col key={id} span={11}>
                               <StyledLink href={item.href} target="_blank">
-                                <Image src={item.icon} width="58px" height="auto" />
+                                <Image src={item.icon} width="68px" height="auto" />
                               </StyledLink>
                             </Col>
                           );

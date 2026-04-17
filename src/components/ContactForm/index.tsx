@@ -25,17 +25,16 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
             <Block title={title} content={content} />
+          <ContactContent className="contact-info">
+            <Content><LinkedinFilled style={{ color: '#005B96 ' }} /> <Link href="https://www.linkedin.com/in/wellingtonwong" target="_blank">LinkedIn.com/in/wellingtonwong</Link></Content>
+            <Content><MailFilled style={{ color: '#005B96 ' }} /> <Link href="mailto:wellingtonwong@gmail.com" target="_blank">wellingtonwong@gmail.com</Link></Content>
+            <Content><PhoneFilled style={{ color: '#005B96 ' }} /> <Link href="tel:+639497692556" target="_blank">+63 949 769 2556</Link></Content>
+          </ContactContent>
           </Slide>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right" triggerOnce>
           <ContactContent className="contact-header">
-            <Content><strong>Contact me</strong></Content>
-          </ContactContent>
-          <ContactContent className="contact-info">
-            <Content><LinkedinFilled style={{ color: '#005B96 ' }} /> <Link href="https://www.linkedin.com/in/wellingtonwong" target="_blank">LinkedIn.com/in/wellingtonwong</Link></Content>
-            <Content><MailFilled style={{ color: '#005B96 ' }} /> <Link href="mailto:wellingtonwong@gmail.com" target="_blank">wellingtonwong@gmail.com</Link></Content>
-            <Content><PhoneFilled style={{ color: '#005B96 ' }} /> <Link href="tel:+639497692556" target="_blank">+63 949 769 2556</Link></Content>
           </ContactContent>
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>

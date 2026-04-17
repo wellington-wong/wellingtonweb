@@ -14,6 +14,9 @@ export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
 `;
 export const NewLine = styled("div")`
+  p {
+    margin: 0;
+  }
 `;
 export const StyledLink = styled("a")`
 `;
@@ -36,8 +39,10 @@ export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  .ant-row {
-    flex: 0.3;
+  > .ant-row {
+    .ant-col {
+      padding-right: 20px;
+    }
   }
 `;
 
