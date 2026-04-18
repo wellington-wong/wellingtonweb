@@ -1,6 +1,60 @@
 {
     "title": "Featured Work",
     "text": "Explore some of the projects I’ve worked on—from responsive websites to full-featured mobile apps—built with performance and usability in mind.",
-    "button": ""
+    "button": "",
+    "galleryItems": [
+	  {
+	    "original": "/img/website-portfolio/chopinlawfirm.jpg",
+	    "thumbnail": "/img/website-portfolio/chopinlawfirm-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/coolairflorida.jpg",
+	    "thumbnail": "/img/website-portfolio/coolairflorida-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/dunlopmotorcycletires.jpg",
+	    "thumbnail": "/img/website-portfolio/dunlopmotorcycletires-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/dunlopprodealer.jpg",
+	    "thumbnail": "/img/website-portfolio/dunlopprodealer-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/dunlopracing.jpg",
+	    "thumbnail": "/img/website-portfolio/dunlopracing-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/flytropic.jpg",
+	    "thumbnail": "/img/website-portfolio/flytropic-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/genious.jpg",
+	    "thumbnail": "/img/website-portfolio/genious-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/kingroofing.jpg",
+	    "thumbnail": "/img/website-portfolio/kingroofing-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/nyccd.jpg",
+	    "thumbnail": "/img/website-portfolio/nyccd-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/ourhome.jpg",
+	    "thumbnail": "/img/website-portfolio/ourhome-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/smxconventioncenter.jpg",
+	    "thumbnail": "/img/website-portfolio/smxconventioncenter-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/sportscentral.jpg",
+	    "thumbnail": "/img/website-portfolio/sportscentral-thumb.jpg"
+	  },
+	  {
+	    "original": "/img/website-portfolio/stanleylaw.jpg",
+	    "thumbnail": "/img/website-portfolio/stanleylaw-thumb.jpg"
+	  }
+	]
   }
   

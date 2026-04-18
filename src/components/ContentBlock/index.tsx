@@ -26,6 +26,7 @@ const ContentBlock = ({
   image,
   title,
   content,
+  content2,
   markup,
   section,
   button,
@@ -91,6 +92,7 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
+              <Content>{content2&&t(content2)}</Content>
               {markup?.map((string)=>
                 <NewLine>{string}</NewLine>
               )}

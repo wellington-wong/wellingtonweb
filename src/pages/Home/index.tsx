@@ -31,6 +31,7 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
+        galleryItems={MiddleBlockContent.galleryItems}
         id="middle"
       />
       <ContentBlock
@@ -46,6 +47,7 @@ const Home = () => {
         direction="left"
         title={AboutContent.title}
         content={AboutContent.text}
+        content2={AboutContent.text2}
         section={AboutContent.section}
         icon="graphs.svg"
         image="dev-photo.png"

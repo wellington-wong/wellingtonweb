@@ -4,6 +4,7 @@ export interface ContentBlockProps {
   title: string;
   image: string;
   content: string;
+  content2?: string;
   markup?: String[];
   section?: {
     title: string;

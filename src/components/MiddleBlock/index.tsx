@@ -12,91 +12,21 @@ interface MiddleBlockProps {
   title: string;
   content: string;
   button: string;
+  galleryItems: {
+    original: string;
+  }[];
   t: TFunction;
   id: string;
 }
 
-/*const images = [
-   {
-      src: "/img/website-portfolio/0b681689cee183fa5ce5750ac0855aa3f6337a16.png",
-      width: 320,
-      height: 174,
-      caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-   },
-   {
-      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-      width: 320,
-      height: 212,
-      tags: [
-         { value: "Ocean", title: "Ocean" },
-         { value: "People", title: "People" },
-      ],
-      alt: "Boats (Jeshu John - designerspics.com)",
-   },
-   {
-      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-      width: 320,
-      height: 212,
-   },
-];*/
+export interface ReactImageGalleryItem extends GalleryItem {
+  link?: string;
+  mobile?: string;
+}
 
-const images2: GalleryItem[] = [
-  {
-    original: "/img/website-portfolio/chopinlawfirm.jpg",
-    thumbnail: "/img/website-portfolio/chopinlawfirm-thumb.jpg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.|The Chopin Law Firm LLC|https://www.chopinlawfirm.com"
-  },
-  {
-    original: "/img/website-portfolio/coolairflorida.jpg",
-    thumbnail: "/img/website-portfolio/coolairflorida-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/dunlopmotorcycletires.jpg",
-    thumbnail: "/img/website-portfolio/dunlopmotorcycletires-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/dunlopprodealer.jpg",
-    thumbnail: "/img/website-portfolio/dunlopprodealer-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/dunlopracing.jpg",
-    thumbnail: "/img/website-portfolio/dunlopracing-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/flytropic.jpg",
-    thumbnail: "/img/website-portfolio/flytropic-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/genious.jpg",
-    thumbnail: "/img/website-portfolio/genious-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/kingroofing.jpg",
-    thumbnail: "/img/website-portfolio/kingroofing-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/nyccd.jpg",
-    thumbnail: "/img/website-portfolio/nyccd-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/ourhome.jpg",
-    thumbnail: "/img/website-portfolio/ourhome-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/smxconventioncenter.jpg",
-    thumbnail: "/img/website-portfolio/smxconventioncenter-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/sportscentral.jpg",
-    thumbnail: "/img/website-portfolio/sportscentral-thumb.jpg",
-  },
-  {
-    original: "/img/website-portfolio/stanleylaw.jpg",
-    thumbnail: "/img/website-portfolio/stanleylaw-thumb.jpg",
-  },
-];
+const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBlockProps) => {
 
-const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
+  const images2: ReactImageGalleryItem[] = galleryItems;
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -112,15 +42,10 @@ const MiddleBlock = ({ title, content, button, t, id }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <ImageGallery
                 items={images2.sort(()=>Math.random() - .8)}
+                //renderItem={()=><Content>{t(content)}</Content>}
               />
               <Content>{t(content)}</Content>
-              {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
-                  {t(button)}
-                </Button>
-              )}
             </Col>
-            {/*<Gallery images={images} enableImageSelection={false} />*/}
           </ContentWrapper>
         </Row>
       </Slide>

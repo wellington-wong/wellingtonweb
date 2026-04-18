@@ -1,15 +1,16 @@
 {
   "title": "Get to Know Me",
-  "text": "I’m a developer passionate about creating digital solutions that make a difference. I build websites and mobile apps with a focus on simplicity, performance, and usability. I enjoy solving problems, learning new technologies, and bringing ideas to life through code.",
+  "text": "I’m a software developer with over 15 years of experience building reliable, scalable digital solutions. I specialize in creating high-performing web and mobile applications with a strong focus on simplicity, usability, and long-term maintainability.",
+  "text2": "Over the years, I’ve worked across diverse projects—turning complex ideas into clean, efficient code. I enjoy solving challenging problems, adopting new technologies, and delivering solutions that create real impact.",
   "section": [
     {
       "title": "",
-      "icon": "/logos/resume.png",
+      "icon": "/logos/resume-new.png",
       "href": "/pdf/Wellington_Wong_Resume_2026.pdf"
     },
     {
       "title": "",
-      "icon": "/logos/projects.png",
+      "icon": "/logos/projects-new.png",
       "href": "/pdf/Wellington_Wong_Portfolio_2026.pdf"
     }
   ]
