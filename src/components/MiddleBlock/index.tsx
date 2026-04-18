@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { Button } from "../../common/Button";
+//import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
 //import { Gallery } from "react-grid-gallery";
 import ImageGallery from "react-image-gallery";
@@ -27,12 +27,6 @@ export interface ReactImageGalleryItem extends GalleryItem {
 const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBlockProps) => {
 
   const images2: ReactImageGalleryItem[] = galleryItems;
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   return (
     <MiddleBlockSection>
       <Slide direction="up" triggerOnce>
