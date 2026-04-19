@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing web design and development projects, skills, and services. Built to highlight professional work, attract clients, and demonstrate technical expertise.
 
-🔗 **Live Site:** [Visit Portfolio](https://www.wellingtonwebsites.com/?utm_source=chatgpt.com)
+🔗 **Live Site:** [Visit Portfolio](https://www.wellingtonwebsites.com)
 
 ---
 
