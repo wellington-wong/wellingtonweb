@@ -39,6 +39,8 @@ const Home = () => {
         title={MissionContent.title}
         content={MissionContent.text}
         markup={MissionContent.markup}
+        github={MissionContent.github}
+        cloudIcons={MissionContent.cloudIcons}
         icon="product-launch.svg"
         image="rocket.png"
         id="mission"

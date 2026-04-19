@@ -5,6 +5,14 @@ export interface ContentBlockProps {
   image: string;
   content: string;
   content2?: string;
+  cloudIcons?: {
+    path: string;
+    url: string;
+  }[];
+  github?: {
+    title: string;
+    link: string;
+  };
   markup?: String[];
   section?: {
     title: string;

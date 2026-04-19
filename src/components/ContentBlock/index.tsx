@@ -27,6 +27,8 @@ const ContentBlock = ({
   title,
   content,
   content2,
+  cloudIcons,
+  github,
   markup,
   section,
   button,
@@ -41,36 +43,10 @@ const ContentBlock = ({
     });
   };
 
-  const icons = [
-    {path: '/img/logos/laravel.png', url: 'https://laravel.com'},
-    {path: '/img/logos/wordpress.png', url: 'https://wordpress.org'},
-    {path: '/img/logos/react.png', url: 'https://react.dev'},
-    {path: '/img/logos/jquery.png', url: 'https://jquery.com'},
-    {path: '/img/logos/mysql.png', url: 'https://www.mysql.com'},
-    {path: '/img/logos/bootstrap.png', url: 'https://getbootstrap.com'},
-    {path: '/img/logos/woocommerce.png', url: 'https://woocommerce.com'},
-    {path: '/img/logos/drupal.png', url: 'https://new.drupal.org/home'},
-    {path: '/img/logos/mongodb.png', url: 'https://www.mongodb.com'},
-    {path: '/img/logos/photoshop.png', url: 'https://www.adobe.com/ph_en/products/photoshop.html'},
-    {path: '/img/logos/html5.png', url: 'https://en.wikipedia.org/wiki/HTML5'},
-    {path: '/img/logos/css3.png', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'},
-    {path: '/img/logos/chatgpt.png', url: 'https://chatgpt.com'},
-    {path: '/img/logos/claude.png', url: 'https://claude.ai'},
-    {path: '/img/logos/cloudflare.png', url: 'https://www.cloudflare.com'},
-    {path: '/img/logos/amazon.png', url: 'https://aws.amazon.com/'},
-  ].sort(()=>Math.random() - .8).map((logo) => {
-   return <a
-      href={logo.url}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <img
-        height="118"
-        width="118"
-        alt=""
-        src={logo.path}
-      />
-    </a>
+  const icons = cloudIcons?.sort(()=>Math.random() - .8).map((logo) => {
+   return <StyledLink href={logo.url} target="_blank" rel="noreferrer">
+      <Image height="118" width="118" src={logo.path} />
+    </StyledLink>
   })
 
   return (
@@ -83,9 +59,10 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={11} md={11} sm={12} xs={24}>
-            {/*<SvgIcon src={icon} width="100%" height="100%" />*/}
-            
-            {id==='mission'?<Cloud options={{ wheelZoom: false, initial: [0.038, 0.028], outlineMethod: 'none', depth: 0.5, noMouse: true, frontSelect: true, freezeDecel: true }}>{ icons }</Cloud>:<Image src={image} width="100%" height="100%" />}
+            {id==='mission'&&icons?
+              <Cloud options={{ wheelZoom: false, initial: [0.038, 0.028], outlineMethod: 'none', depth: 0.5, noMouse: true, frontSelect: true, freezeDecel: true }}>{ icons }</Cloud>:
+              <Image src={image} width="100%" height="100%" />
+            }
             
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
@@ -99,7 +76,7 @@ const ContentBlock = ({
             
               {id==='mission'&&<Button name="submit" onClick={() => window.open("https://github.com/wellington-wong", '_blank') }>
                 <GithubFilled className="github-icon" />
-                {t('Visit my GitHub ')}
+                {t('Visit my GitHub')}
               </Button>}
               {direction === "right" ? (
                 <ButtonWrapper>

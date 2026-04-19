@@ -1,5 +1,26 @@
 {
   "title": "Skills & Technologies",
   "text": "From front-end interfaces to back-end systems, I use a versatile set of technologies to create seamless and functional applications.",
-  "markup": ["Backend: Laravel, Wordpress, Drupal", "Frontend: React, CSS, JavaScript, Bootstrap, jQuery", "Mobile: React Native", "AI: ChatGPT, Claude", "Tools: GitHub, Cloudflare, Amazon Web Services"]
+  "markup": ["Backend: Laravel, Wordpress, Drupal", "Frontend: React, CSS, JavaScript, Bootstrap, jQuery", "Mobile: React Native", "AI: ChatGPT, Claude", "Tools: GitHub, Cloudflare, Amazon Web Services"],
+  "github": {
+  	"title": "",
+  	"link": ""
+  },
+  "cloudIcons": [
+    {"path": "logos/wordpress.png", "url": "https://wordpress.org"},
+    {"path": "logos/react.png", "url": "https://react.dev"},
+    {"path": "logos/jquery.png", "url": "https://jquery.com"},
+    {"path": "logos/mysql.png", "url": "https://www.mysql.com"},
+    {"path": "logos/bootstrap.png", "url": "https://getbootstrap.com"},
+    {"path": "logos/woocommerce.png", "url": "https://woocommerce.com"},
+    {"path": "logos/drupal.png", "url": "https://new.drupal.org/home"},
+    {"path": "logos/mongodb.png", "url": "https://www.mongodb.com"},
+    {"path": "logos/photoshop.png", "url": "https://www.adobe.com/ph_en/products/photoshop.html"},
+    {"path": "logos/html5.png", "url": "https://en.wikipedia.org/wiki/HTML5"},
+    {"path": "logos/css3.png", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+    {"path": "logos/chatgpt.png", "url": "https://chatgpt.com"},
+    {"path": "logos/claude.png", "url": "https://claude.ai"},
+    {"path": "logos/cloudflare.png", "url": "https://www.cloudflare.com"},
+    {"path": "logos/amazon.png", "url": "https://aws.amazon.com/"}
+  ]
 }
