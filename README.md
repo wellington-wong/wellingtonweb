@@ -1,112 +1,73 @@
-![landy](https://user-images.githubusercontent.com/48876996/121569479-e179db80-ca31-11eb-8a48-9c3de9b142f3.gif)
+🌐 Wellington Web Portfolio
 
-![Landy React Template License](https://img.shields.io/github/license/Adrinlol/landy-react-template)
-![Landy React Template Release Date](https://img.shields.io/github/release-date/Adrinlol/landy-react-template)
-![Landy React TemplateStars](https://img.shields.io/github/stars/Adrinlol/landy-react-template)
-![Landy React Template Language](https://img.shields.io/github/languages/top/Adrinlol/landy-react-template)
-![Landy React Template TypeScript](https://badgen.net/npm/types/tslib)
+A modern, responsive portfolio website showcasing web design and development projects, skills, and services. Built to highlight professional work, attract clients, and demonstrate technical expertise.
 
-## Free React landing page template
+🔗 Live Site: Visit Portfolio
 
-[Landy][Landy] is an open-source React landing page template written in TypeScript, designed for developers and startups, who want to create a quick and professional landing page for their business or project.
+📌 Overview
 
-This React template comes with multi-lingual support, smooth animations, set of ready to use sections and most importantly, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in React.js.
+This portfolio website presents a collection of web development projects along with information about services, experience, and design approach. It focuses on clean UI, responsiveness, and performance to create a strong online presence.
 
-## Table of contents
+Websites like this are essential for building credibility, showcasing work, and reaching a global audience 24/7.
 
-- [Features](#features)
-- [Google Lighthouse](#google-lighthouse)
-  - [Performance](#performance)
-  - [Accessibility](#accessibility)
-  - [Best Practices](#best-practices)
-  - [SEO](#seo)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Special Thanks](#special-thanks)
-- [Usage](#usage)
-- [License](#license)
+✨ Features
+Responsive design (mobile-first)
+Clean and modern UI/UX
+Project showcase / portfolio section
+Service offerings
+Contact section for inquiries
+Fast-loading and optimized performance
+🛠️ Tech Stack
 
-## Features
+(Update this based on your actual stack)
 
-Your project will have everything you need to build a modern single-page React app:
+Frontend: HTML, CSS, JavaScript
+Framework/Library: (e.g., React, Vue, etc.)
+Hosting: Cloud platform (Pages.dev)
+Version Control: Git + GitHub
+📂 Project Structure
+├── assets/
+├── css/
+├── js/
+├── index.html
+└── README.md
+🚀 Getting Started
 
-- 🎁 **Modern** – Template created using the latest features of React (State management using Hooks, Code-Splitting to reduce the bundle size)
+To run locally:
 
-- 💻 **Responsive** – Highly responsive and reusable UI components, that change depending on the provided props
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+open index.html
 
-- 🚀 **Fast** – Buttery smooth experience thanks to the implementation of best practices and no third party dependencies, resulting in <b>PERFECT</b> Google Lighthouse scores
+Or use a local server:
 
-- 🏷 **TypeScript support** – Landy is written in TypeScript to improve the DX
+npx serve
+🎯 Purpose
 
-- 🌍 **Internationalization** - Prebuilt standalone file that works in every environment and doesn't require reloading the page to translate the content
+This portfolio is designed to:
 
-- 🛸 **Routing** - Each file inside the src/pages directory will generate its own route, so you don't have to manually handle the routing
+Showcase web development projects
+Highlight design and coding skills
+Attract potential clients or employers
+Demonstrate real-world applications
+📸 Preview
 
-- 🤙 **Contact Form** - Contact form written in React Hooks, with uncontrolled form validation to reduce unnecessary performance penalty. You just need to provide the endpoint
+(Add screenshots here)
 
-- ⚙️ **Maintenance** - All of the content is stored in the JSON files, so that you can easily manage the content of the website
+🤝 Contributing
 
-## Google Lighthouse
+Contributions are welcome!
 
-![1](https://user-images.githubusercontent.com/48876996/121569366-c313e000-ca31-11eb-940c-187f556ff0d6.png)
+Fork the repository
+Create a new branch
+Commit your changes
+Push and open a Pull Request
+📬 Contact
 
-[Google Lighthouse][Google Lighthouse] is an open-source, automated tool for measuring the quality of web pages. Google Lighthouse audits performance, accessibility and search engine optimization of web pages.
+If you’d like to work together or have any questions, feel free to reach out via the website’s contact section.
 
-### Performance
+📄 License
 
-Audits for metrics like first paint and time to interactive to determine lag.
+This project is open-source and available under the MIT License.
 
-### Accessibility
-
-Checks for common issues that may prevent users from accessing your content.
-
-### Best Practices
-
-Looks for everything from HTTPS usage to correct image aspect ratios.
-
-### SEO 
-
-Checks for best practices to ensure your site is discoverable.
-
-
-## Demo
-
-Check the live demo here 👉️ https://landy-web.netlify.app/
-
-
-### Installation
-
-You’ll need to have Node 10.16.0 or later version on your local development machine (but it’s not required on the server). I recommend using the latest LTS version.
-
-To create a new app, you have to:
-
-Begin by cloning this repository to establish your own local copy. This process is straightforward and ensures you have all the necessary files and resources at your fingertips. You can find step-by-step instructions in this helpful article: Cloning a [repository on GitHub.com](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
-
-## What's included
-
-- [antd][antd] - React UI library that contains a set of high quality components.
-- [react-awesome-reveal][react-awesome-reveal] - High performance library that adds reveal animations using the Intersection Observer API.
-- [styled-componets][styled-componets] - Variant on “CSS-in-JS”—which solves many of the problems with traditional CSS.
-- [i18next][i18next] - Internationalization-framework written in and for JavaScript.
-
-## Special thanks
-
-[whoooa][whoooa] - Use fantastic, handmade illustrations with easily changeable colors and different styles.
-
-## Usage
-
-Use it for whatever you want, and be sure to reach out to me on [Twitter](https://twitter.com/Adrinlolx) if you have any questions, or build something cool with it.
-
-## License
-
-Licensed under the MIT license.
-
-<!-- prettier-ignore-start -->
-[antd]: https://github.com/ant-design/ant-design
-[react-awesome-reveal]: https://www.npmjs.com/package/react-awesome-reveal
-[styled-componets]: https://github.com/styled-components/styled-components
-[i18next]: https://github.com/i18next/i18next
-[whoooa]: https://www.whoooa.rocks/
-[Landy]: https://www.npmjs.com/package/cra-template-adrinlol
-[Google Lighthouse]: https://developers.google.com/web/tools/lighthouse
-<!-- prettier-ignore-end -->
+If you want, I can analyze your actual site UI/design and upgrade this README to be more personalized (with real sections, colors, and branding).
