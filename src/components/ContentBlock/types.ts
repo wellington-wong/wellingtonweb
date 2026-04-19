@@ -13,7 +13,10 @@ export interface ContentBlockProps {
     title: string;
     link: string;
   };
-  markup?: String[];
+  skills?: {
+    title: string;
+    content: string;
+  }[];
   section?: {
     title: string;
     icon: string;

@@ -17,6 +17,8 @@ import {
   StyledRow,
   ButtonWrapper,
   StyledLink,
+  StyledSpan,
+  StyledStrong
 } from "./styles";
 import {Cloud} from 'react-icon-cloud';
 import { GithubFilled } from '@ant-design/icons';
@@ -29,7 +31,7 @@ const ContentBlock = ({
   content2,
   cloudIcons,
   github,
-  markup,
+  skills,
   section,
   button,
   t,
@@ -70,13 +72,13 @@ const ContentBlock = ({
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               <Content>{content2&&t(content2)}</Content>
-              {markup?.map((string)=>
-                <NewLine>{string}</NewLine>
+              {skills?.map((string)=>
+                <NewLine><StyledStrong>{string.title}</StyledStrong>: <StyledSpan>{string.content}</StyledSpan></NewLine>
               )}
             
-              {id==='mission'&&<Button name="submit" onClick={() => window.open("https://github.com/wellington-wong", '_blank') }>
+              {id==='mission'&&github&&<Button name="submit" onClick={() => window.open(github.link, '_blank') }>
                 <GithubFilled className="github-icon" />
-                {t('Visit my GitHub')}
+                {t(github.title)}
               </Button>}
               {direction === "right" ? (
                 <ButtonWrapper>

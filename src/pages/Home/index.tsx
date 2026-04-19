@@ -38,7 +38,7 @@ const Home = () => {
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        markup={MissionContent.markup}
+        skills={MissionContent.skills}
         github={MissionContent.github}
         cloudIcons={MissionContent.cloudIcons}
         icon="product-launch.svg"

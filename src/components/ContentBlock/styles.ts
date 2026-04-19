@@ -20,6 +20,10 @@ export const NewLine = styled("div")`
 `;
 export const StyledLink = styled("a")`
 `;
+export const StyledStrong = styled("strong")`
+`;
+export const StyledSpan = styled("span")`
+`;
 
 export const StyledRow = styled(Row)`
   flex-direction: ${({ direction }: { direction: string }) =>
