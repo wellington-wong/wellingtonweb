@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
+import { useOnInView } from "react-intersection-observer";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
@@ -8,8 +10,9 @@ import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
-import { Content, ContactContainer, ContactContent, FormGroup, Link, Span, ButtonContainer } from "./styles";
 import { LinkedinFilled, MailFilled, PhoneFilled } from '@ant-design/icons';
+import { AppContext } from "../../context/AppContext";
+import { Content, ContactContainer, ContactContent, FormGroup, Link, Span, ButtonContainer } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
@@ -19,10 +22,17 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     return <Span>{ErrorMessage}</Span>;
   };
 
+  const { setContextData } = useContext(AppContext);
+  const trackingRef = useOnInView((inView, entry)=>{
+    if (inView) {
+      setContextData({ inViewId: id });
+    }
+  })
+
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
-        <Col lg={12} md={11} sm={24} xs={24}>
+        <Col lg={12} md={11} sm={24} xs={24} ref={trackingRef}>
           <Slide direction="left" triggerOnce>
             <Block title={title} content={content} />
           <ContactContent className="contact-info">

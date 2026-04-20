@@ -1,12 +1,13 @@
+import { useContext } from "react";
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-//import { Button } from "../../common/Button";
+import { useOnInView } from "react-intersection-observer";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
-//import { Gallery } from "react-grid-gallery";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/image-gallery.css";
 import type { GalleryItem } from "react-image-gallery";
+import { AppContext } from "../../context/AppContext"
 
 interface MiddleBlockProps {
   title: string;
@@ -27,12 +28,20 @@ export interface ReactImageGalleryItem extends GalleryItem {
 const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBlockProps) => {
 
   const images2: ReactImageGalleryItem[] = galleryItems;
+
+  const { setContextData } = useContext(AppContext);
+  const trackingRef = useOnInView((inView, entry)=>{
+    if (inView) {
+      setContextData({ inViewId: id });
+    }
+  })
+
   return (
     <MiddleBlockSection>
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle" id={id}>
           <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24}>
+            <Col lg={24} md={24} sm={24} xs={24} ref={trackingRef}>
               <h6>{t(title)}</h6>
               <ImageGallery
                 items={images2.sort(()=>Math.random() - .8)}

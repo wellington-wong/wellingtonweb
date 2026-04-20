@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
 import { Button } from "../../common/Button";
+import { AppContext } from "../../context/AppContext";
 import {
   HeaderSection,
   LogoContainer,
@@ -25,28 +26,32 @@ const Header = ({ t }: { t: TFunction }) => {
     setVisibility(!visible);
   };
 
-    const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
-    };
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id) as HTMLDivElement;
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+    setVisibility(false);
+  };
+
+  const { contextData: {inViewId} } = useContext(AppContext);
+
   const MenuItem = () => {
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("middle")}>
-          <Span>{t("Projects")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("middle")} className={(inViewId==='middle')?'active':''}>
+          <Span>{inViewId}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("mission")} className={(inViewId==='mission')?'active':''}>
           <Span>{t("Expertise")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <CustomNavLinkSmall onClick={() => scrollTo("about")} className={(inViewId==='about')?'active':''}>
           <Span>{t("About")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
+          className={(inViewId==='contact')?'active':''}
         >
           <Span>
             <Button>{t("Contact Me")}</Button>

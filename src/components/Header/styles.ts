@@ -89,6 +89,12 @@ export const CustomNavLinkSmall = styled(NavLink)`
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;
   }
+
+  &.active span {
+    color: rgb(255, 130, 92);
+    text-underline-position: under;
+    text-decoration: rgb(255, 130, 92) solid underline;
+  }
 `;
 
 export const Label = styled("span")`
