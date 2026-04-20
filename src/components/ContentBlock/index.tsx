@@ -78,8 +78,9 @@ const ContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6 ref={trackingRef}>{t(title)}</h6>
+              <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
+              <StyledSpan ref={trackingRef} />
               <Content>{content2&&t(content2)}</Content>
               {skills?.map((string, i)=>
                 <NewLine key={i}><StyledStrong>{string.title}</StyledStrong>: <StyledSpan>{string.content}</StyledSpan></NewLine>

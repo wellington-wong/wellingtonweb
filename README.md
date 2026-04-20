@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing web design and development projects, skills, and services. Built to highlight professional work, attract clients, and demonstrate technical expertise.
 
-🔗 **Live Site:** [Visit Portfolio](https://www.wellingtonwebsites.com)
+🔗 **Live Site:** [Visit Portfolio](https://wellingtonweb.pages.dev/)
 
 ---
 
@@ -29,9 +29,10 @@ Websites like this are essential for building credibility, showcasing work, and 
 
 *(Update this based on your actual stack)*
 
-* **Frontend:** HTML, CSS, JavaScript
-* **Framework/Library:** (e.g., React, Vue, etc.)
-* **Hosting:** Cloud platform (Pages.dev)
+* **Frontend:** React, CSS, JavaScript, Bootstrap, jQuery
+* **Framework/Library:** Laravel, Wordpress, Drupal
+* **Database:** MySQL
+* **Hosting:** Cloudflare, Amazon Web Services
 * **Version Control:** Git + GitHub
 
 ---
@@ -39,11 +40,9 @@ Websites like this are essential for building credibility, showcasing work, and 
 ## 📂 Project Structure
 
 ```
-├── assets/
-├── css/
-├── js/
-├── index.html
-└── README.md
+├── public/
+├── src/
+├── README.md
 ```
 
 ---
@@ -53,15 +52,9 @@ Websites like this are essential for building credibility, showcasing work, and 
 To run locally:
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
-open index.html
-```
-
-Or use a local server:
-
-```bash
-npx serve
+https://github.com/wellington-wong/wellingtonweb.git
+cd wellingtonweb
+run comman 'npm run start'
 ```
 
 ---
@@ -79,7 +72,7 @@ This portfolio is designed to:
 
 ## 📸 Preview
 
-*(Add screenshots here)*
+![Homepage](screenshots/hero.png)
 
 ---
 
@@ -103,9 +96,3 @@ If you’d like to work together or have any questions, feel free to reach out v
 ## 📄 License
 
 This project is open-source and available under the MIT License.
-
----
-
-If you want, I can **analyze your actual site UI/design** and upgrade this README to be more personalized (with real sections, colors, and branding).
-
-[1]: https://societywebsolutions.com/location/wellington/development/?utm_source=chatgpt.com "Wellington Web Development Company"

@@ -22,10 +22,11 @@ const Block = ({ title, content, t, id }: Props) => {
 
   return (
     <Container>
-      <h6 ref={trackingRef}>{t(title)}</h6>
+      <h6>{t(title)}</h6>
       <TextWrapper>
         <Content>{t(content)}</Content>
       </TextWrapper>
+      <Content ref={trackingRef} />
     </Container>
   );
 };
