@@ -41,8 +41,8 @@ const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBloc
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle" id={id}>
           <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24} ref={trackingRef}>
-              <h6>{t(title)}</h6>
+            <Col lg={24} md={24} sm={24} xs={24}>
+              <h6 ref={trackingRef}>{t(title)}</h6>
               <ImageGallery
                 items={images2.sort(()=>Math.random() - .8)}
                 //renderItem={()=><Content>{t(content)}</Content>}

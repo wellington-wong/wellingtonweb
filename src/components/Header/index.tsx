@@ -40,7 +40,7 @@ const Header = ({ t }: { t: TFunction }) => {
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("middle")} className={(inViewId==='middle')?'active':''}>
-          <Span>{inViewId}</Span>
+          <Span>{t("Projects")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")} className={(inViewId==='mission')?'active':''}>
           <Span>{t("Expertise")}</Span>

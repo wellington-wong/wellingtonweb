@@ -1,8 +1,6 @@
-import { useContext } from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { useOnInView } from "react-intersection-observer";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
@@ -11,7 +9,6 @@ import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { LinkedinFilled, MailFilled, PhoneFilled } from '@ant-design/icons';
-import { AppContext } from "../../context/AppContext";
 import { Content, ContactContainer, ContactContent, FormGroup, Link, Span, ButtonContainer } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
@@ -22,19 +19,12 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     return <Span>{ErrorMessage}</Span>;
   };
 
-  const { setContextData } = useContext(AppContext);
-  const trackingRef = useOnInView((inView, entry)=>{
-    if (inView) {
-      setContextData({ inViewId: id });
-    }
-  })
-
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
-        <Col lg={12} md={11} sm={24} xs={24} ref={trackingRef}>
+        <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left" triggerOnce>
-            <Block title={title} content={content} />
+            <Block title={title} content={content} id={id} />
           <ContactContent className="contact-info">
             <Content><LinkedinFilled style={{ color: '#005B96 ' }} /> <Link href="https://www.linkedin.com/in/wellingtonwong" target="_blank">LinkedIn.com/in/wellingtonwong</Link></Content>
             <Content><MailFilled style={{ color: '#005B96 ' }} /> <Link href="mailto:wellingtonwong@gmail.com" target="_blank">wellingtonwong@gmail.com</Link></Content>

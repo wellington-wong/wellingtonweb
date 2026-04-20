@@ -61,7 +61,7 @@ const ContentBlock = ({
   })
 
   return (
-    <ContentSection ref={trackingRef}>
+    <ContentSection>
       <Fade direction={direction} triggerOnce>
         <StyledRow
           justify="space-between"
@@ -78,7 +78,7 @@ const ContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              <h6 ref={trackingRef}>{t(title)}</h6>
               <Content>{t(content)}</Content>
               <Content>{content2&&t(content2)}</Content>
               {skills?.map((string, i)=>
