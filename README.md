@@ -63,6 +63,7 @@ This portfolio is designed to:
 * Highlight design and coding skills
 * Attract potential clients or employers
 * Demonstrate real-world applications
+* Communicate services and areas of expertise clearly
 
 ---
 
