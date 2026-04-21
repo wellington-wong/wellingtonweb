@@ -50,7 +50,7 @@ To run locally:
 ```bash
 https://github.com/wellington-wong/wellingtonweb.git
 cd wellingtonweb
-run comman 'npm run start'
+run command 'npm run start'
 ```
 
 ---
@@ -63,6 +63,7 @@ This portfolio is designed to:
 * Highlight design and coding skills
 * Attract potential clients or employers
 * Demonstrate real-world applications
+* Communicate services and areas of expertise clearly
 
 ---
 
