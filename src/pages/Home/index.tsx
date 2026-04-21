@@ -12,7 +12,7 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
-
+const galleryItems = MiddleBlockContent.galleryItems.sort(()=>Math.random() - .8);
 const Home = () => {
 
   return (
@@ -31,7 +31,7 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-        galleryItems={MiddleBlockContent.galleryItems}
+        galleryItems={galleryItems}
         id="middle"
       />
       <ContentBlock

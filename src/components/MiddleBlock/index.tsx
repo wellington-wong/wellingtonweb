@@ -1,13 +1,23 @@
 import { useContext } from "react";
 import { Row, Col } from "antd";
+import { ArrowUpOutlined } from '@ant-design/icons';
 import { withTranslation, TFunction } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { useOnInView } from "react-intersection-observer";
-import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/image-gallery.css";
 import type { GalleryItem } from "react-image-gallery";
 import { AppContext } from "../../context/AppContext"
+import {
+  MiddleBlockSection,
+  Content,
+  ContentWrapper,
+  ImageGalleryCaption,
+  ImageGalleryCaptionContent,
+  ImageGalleryCaptionHeading,
+  ImageGalleryItem,
+  NewLink
+} from "./styles";
 
 interface MiddleBlockProps {
   title: string;
@@ -15,6 +25,7 @@ interface MiddleBlockProps {
   button: string;
   galleryItems: {
     original: string;
+    link: string;
   }[];
   t: TFunction;
   id: string;
@@ -44,8 +55,18 @@ const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBloc
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6 ref={trackingRef}>{t(title)}</h6>
               <ImageGallery
-                items={images2.sort(()=>Math.random() - .8)}
-                //renderItem={()=><Content>{t(content)}</Content>}
+                showPlayButton={false}
+                showFullscreenButton={false}
+                items={images2}
+                renderItem={({original, originalTitle, link, description, thumbnail }:ReactImageGalleryItem)=><>
+                  <ImageGalleryItem className="image-gallery-image" src={original}></ImageGalleryItem>
+                  <ImageGalleryCaption>
+                    <ImageGalleryCaptionHeading>
+                      <NewLink href={link} rel="noreferrer noopener" target="_blank">{originalTitle} <ArrowUpOutlined /></NewLink>
+                    </ImageGalleryCaptionHeading>
+                    <ImageGalleryCaptionContent>{description}</ImageGalleryCaptionContent>
+                  </ImageGalleryCaption>
+                </>}
               />
               <Content>{t(content)}</Content>
             </Col>

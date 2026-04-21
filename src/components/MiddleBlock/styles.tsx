@@ -24,3 +24,39 @@ export const ContentWrapper = styled("div")`
     max-width: 100%;
   }
 `;
+
+export const ImageGalleryItem = styled("img")`
+  object-fit: inherit !important;
+  max-height: none !important;
+`;
+export const ImageGalleryCaption = styled("div")`
+  position: absolute;
+  width: 50%;
+  background: rgba(238, 228, 218, 0.987);
+  left: 10px;
+  bottom: 10px;
+  padding: 15px 20px 0px 20px;
+  border-radius: 10px;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+`;
+export const ImageGalleryCaptionHeading = styled("strong")`
+  margin-bottom: 102px;
+  span {
+    transform: rotate(45deg);
+  }
+`;
+export const ImageGalleryCaptionContent = styled("p")`
+  font-size: 12px;
+  margin-top:1em;
+`;
+export const NewLink = styled("a")`
+  color: rgb(53, 56, 57);
+  &:hover {
+    color: rgb(53, 56, 57);
+  }
+`;

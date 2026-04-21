@@ -5,55 +5,94 @@
     "galleryItems": [
 	  {
 	    "original": "/img/website-portfolio/chopinlawfirm.jpg",
-	    "thumbnail": "/img/website-portfolio/chopinlawfirm-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/chopinlawfirm-thumb.jpg",
+	    "originalTitle": "Chopin Law Firm",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.chopinlawfirm.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/coolairflorida.jpg",
-	    "thumbnail": "/img/website-portfolio/coolairflorida-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/coolairflorida-thumb.jpg",
+	    "originalTitle": "Natal Air Conditioning",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.coolairflorida.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/dunlopmotorcycletires.jpg",
-	    "thumbnail": "/img/website-portfolio/dunlopmotorcycletires-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/dunlopmotorcycletires-thumb.jpg",
+	    "originalTitle": "Dunlop Motorcycle Tires",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.dunlopmotorcycletires.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/dunlopprodealer.jpg",
-	    "thumbnail": "/img/website-portfolio/dunlopprodealer-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/dunlopprodealer-thumb.jpg",
+	    "originalTitle": "Dunlop Pro Dealer",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.dunlopprodealer.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/dunlopracing.jpg",
-	    "thumbnail": "/img/website-portfolio/dunlopracing-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/dunlopracing-thumb.jpg",
+	    "originalTitle": "Dunlop Racing",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.dunlopracing.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/flytropic.jpg",
-	    "thumbnail": "/img/website-portfolio/flytropic-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/flytropic-thumb.jpg",
+	    "originalTitle": "Tropic Ocean Airways",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://flytropic.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/genious.jpg",
-	    "thumbnail": "/img/website-portfolio/genious-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/genious-thumb.jpg",
+	    "originalTitle": "GeniouS Computers",
+	    "description": "I managed and enhanced a Drupal website by resolving issues that impacted performance and usability. I developed and tailored features using modules and theme adjustments to keep the site efficient and current.",
+	    "link": "https://www.genious.be"
 	  },
 	  {
 	    "original": "/img/website-portfolio/kingroofing.jpg",
-	    "thumbnail": "/img/website-portfolio/kingroofing-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/kingroofing-thumb.jpg",
+	    "originalTitle": "King Roofing",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.kingroofing.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/nyccd.jpg",
-	    "thumbnail": "/img/website-portfolio/nyccd-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/nyccd-thumb.jpg",
+	    "originalTitle": "New York Center for Cosmetic Dentistry",
+	    "description": " Ultricies aliquam faucibus integer arcu lorem platea turpis in ut maecenas imperdiet conubia at. Facilisi dictumst quisque sem non praesent vestibulum placerat ligula molestie.",
+	    "link": "https://www.nyccd.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/ourhome.jpg",
-	    "thumbnail": "/img/website-portfolio/ourhome-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/ourhome-thumb.jpg",
+	    "originalTitle": "Our Home Philippines",
+	    "description": "I supported and optimized a Drupal site by troubleshooting bugs and improving overall performance. I also built and refined features through module integration and theme customization to keep the site reliable and up to date.",
+	    "link": "https://ourhome.ph"
 	  },
 	  {
 	    "original": "/img/website-portfolio/smxconventioncenter.jpg",
-	    "thumbnail": "/img/website-portfolio/smxconventioncenter-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/smxconventioncenter-thumb.jpg",
+	    "originalTitle": "SMX Convention Center",
+	    "description": "I supported and optimized a Drupal site by troubleshooting bugs and improving overall performance. I also built and refined features through module integration and theme customization to keep the site reliable and up to date.",
+	    "link": "https://www.smxconventioncenter.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/sportscentral.jpg",
-	    "thumbnail": "/img/website-portfolio/sportscentral-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/sportscentral-thumb.jpg",
+	    "originalTitle": "Sports Central",
+	    "description": "I supported and optimized a Drupal site by troubleshooting bugs and improving overall performance. I also built and refined features through module integration and theme customization to keep the site reliable and up to date.",
+	    "link": "https://sportscentral.ph"
 	  },
 	  {
 	    "original": "/img/website-portfolio/stanleylaw.jpg",
-	    "thumbnail": "/img/website-portfolio/stanleylaw-thumb.jpg"
+	    "thumbnail": "/img/website-portfolio/stanleylaw-thumb.jpg",
+	    "originalTitle": "Stanley Law",
+	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "link": "https://www.stanleylawteam.com"
 	  }
 	]
   }

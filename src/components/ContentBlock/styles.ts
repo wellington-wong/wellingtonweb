@@ -18,6 +18,7 @@ export const NewLine = styled("div")`
     margin: 0;
   }
 `;
+
 export const StyledLink = styled("a")`
 `;
 export const StyledStrong = styled("strong")`
