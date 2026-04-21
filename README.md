@@ -50,7 +50,7 @@ To run locally:
 ```bash
 https://github.com/wellington-wong/wellingtonweb.git
 cd wellingtonweb
-run comman 'npm run start'
+run command 'npm run start'
 ```
 
 ---
