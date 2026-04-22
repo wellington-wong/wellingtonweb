@@ -5,7 +5,6 @@ import { withTranslation } from "react-i18next";
 import { useOnInView } from "react-intersection-observer";
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
-//import { SvgIcon } from "../../common/SvgIcon";
 import { Image } from "../../common/Image";
 import { Cloud } from 'react-icon-cloud';
 import { GithubFilled } from '@ant-design/icons';
@@ -15,8 +14,6 @@ import {
   Content,
   ContentWrapper,
   ServiceWrapper,
-  //MinTitle,
-  //MinPara,
   NewLine,
   StyledRow,
   ButtonWrapper,

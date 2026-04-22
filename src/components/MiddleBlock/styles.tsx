@@ -35,7 +35,7 @@ export const ImageGalleryCaption = styled("div")`
   background: rgba(238, 228, 218, 0.987);
   left: 10px;
   bottom: 10px;
-  padding: 15px 20px 0px 20px;
+  padding: 1em 20px 0px 20px;
   border-radius: 10px;
 
   @media only screen and (max-width: 768px) {
@@ -52,7 +52,7 @@ export const ImageGalleryCaptionHeading = styled("strong")`
 `;
 export const ImageGalleryCaptionContent = styled("p")`
   font-size: 12px;
-  margin-top:1em;
+  margin-top: 0.5em;
 `;
 export const NewLink = styled("a")`
   color: rgb(53, 56, 57);
