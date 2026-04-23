@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, memo } from "react";
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
@@ -135,4 +135,4 @@ const ContentBlock = forwardRef<HTMLDivElement, ContentBlockProps>(({
   );
 });
 
-export default (ContentBlock);
+export default memo(ContentBlock);
