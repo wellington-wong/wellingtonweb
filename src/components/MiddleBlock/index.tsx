@@ -1,13 +1,11 @@
-import { useContext } from "react";
+import { forwardRef } from "react";
 import { Row, Col } from "antd";
 import { ArrowUpOutlined } from '@ant-design/icons';
-import { withTranslation, TFunction } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { useOnInView } from "react-intersection-observer";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/image-gallery.css";
 import type { GalleryItem } from "react-image-gallery";
-import { AppContext } from "../../context/AppContext"
 import {
   MiddleBlockSection,
   Content,
@@ -27,8 +25,8 @@ interface MiddleBlockProps {
     original: string;
     link: string;
   }[];
-  t: TFunction;
   id: string;
+  ref: React.RefObject<HTMLDivElement>;
 }
 
 export interface ReactImageGalleryItem extends GalleryItem {
@@ -36,24 +34,17 @@ export interface ReactImageGalleryItem extends GalleryItem {
   mobile?: string;
 }
 
-const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBlockProps) => {
-
+const MiddleBlock = forwardRef<HTMLDivElement, MiddleBlockProps>(({ title, content, button, id, galleryItems }, ref) => {
+  const { t } = useTranslation();
   const images2: ReactImageGalleryItem[] = galleryItems;
 
-  const { setContextData } = useContext(AppContext);
-  const trackingRef = useOnInView((inView, entry)=>{
-    if (inView) {
-      setContextData({ inViewId: id });
-    }
-  })
-
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection ref={ref}>
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle" id={id}>
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <h6 ref={trackingRef}>{t(title)}</h6>
+              <h6>{t(title)}</h6>
               <ImageGallery
                 showPlayButton={false}
                 showFullscreenButton={false}
@@ -75,6 +66,6 @@ const MiddleBlock = ({ title, content, button, t, id, galleryItems }: MiddleBloc
       </Slide>
     </MiddleBlockSection>
   );
-};
+});
 
-export default withTranslation()(MiddleBlock);
+export default (MiddleBlock);

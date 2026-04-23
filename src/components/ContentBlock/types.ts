@@ -33,7 +33,7 @@ export interface ContentBlockProps {
         scrollto: string; 
       }
   )[];
-  t: TFunction;
   id: string;
   direction: "left" | "right";
+  ref: React.RefObject<HTMLDivElement>;
 }

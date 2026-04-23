@@ -4,6 +4,7 @@ export interface ContactProps {
   content: string;
   id: string;
   t: TFunction;
+  ref: React.RefObject<HTMLDivElement>;
 }
 
 export interface ValidationTypeProps {

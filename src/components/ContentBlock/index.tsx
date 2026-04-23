@@ -1,14 +1,12 @@
-import { useContext } from "react";
+import { forwardRef } from "react";
 import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
-import { withTranslation } from "react-i18next";
-import { useOnInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { Image } from "../../common/Image";
 import { Cloud } from 'react-icon-cloud';
 import { GithubFilled } from '@ant-design/icons';
-import { AppContext } from "../../context/AppContext";
 import {
   ContentSection,
   Content,
@@ -22,7 +20,7 @@ import {
   StyledStrong
 } from "./styles";
 
-const ContentBlock = ({
+const ContentBlock = forwardRef<HTMLDivElement, ContentBlockProps>(({
   icon,
   image,
   title,
@@ -33,10 +31,12 @@ const ContentBlock = ({
   skills,
   section,
   button,
-  t,
   id,
-  direction,
-}: ContentBlockProps) => {
+  direction
+  }, ref) => {
+
+  const { t } = useTranslation();
+
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -50,15 +50,8 @@ const ContentBlock = ({
     </StyledLink>
   })
 
-  const { setContextData } = useContext(AppContext);
-  const trackingRef = useOnInView((inView, entry)=>{
-    if (inView) {
-      setContextData({ inViewId: id });
-    }
-  })
-
   return (
-    <ContentSection>
+    <ContentSection ref={ref}>
       <Fade direction={direction} triggerOnce>
         <StyledRow
           justify="space-between"
@@ -77,7 +70,6 @@ const ContentBlock = ({
             <ContentWrapper>
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
-              <StyledSpan ref={trackingRef} />
               <Content>{content2&&t(content2)}</Content>
               {skills?.map((string, i)=>
                 <NewLine key={i}><StyledStrong>{string.title}</StyledStrong>: <StyledSpan>{string.content}</StyledSpan></NewLine>
@@ -141,6 +133,6 @@ const ContentBlock = ({
       </Fade>
     </ContentSection>
   );
-};
+});
 
-export default withTranslation()(ContentBlock);
+export default (ContentBlock);

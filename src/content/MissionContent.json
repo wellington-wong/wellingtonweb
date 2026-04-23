@@ -3,7 +3,7 @@
   "text": "From front-end interfaces to back-end systems, I use a versatile set of technologies to create seamless and functional applications.",
   "skills": [
     {"title": "Backend", "content": "Laravel, Wordpress, Drupal"},
-    {"title": "Frontend", "content": "React, CSS, JavaScript, Bootstrap, jQuery"},
+    {"title": "Frontend", "content": "React, CSS, TypeScript, Bootstrap, jQuery"},
     {"title": "Mobile", "content": "React Native"},
     {"title": "AI", "content": "ChatGPT, Claude"},
     {"title": "Tools", "content": "GitHub, Cloudflare, Amazon Web Services"}
