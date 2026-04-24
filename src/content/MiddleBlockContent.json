@@ -1,6 +1,6 @@
 {
     "title": "Featured Work",
-    "text": "Explore some of the projects I’ve worked on—from responsive websites to full-featured mobile apps—built with performance and usability in mind.",
+    "text": "Explore a selection of projects I’ve helped developed, ranging from responsive websites to fully featured mobile applications. Each project is crafted with a strong focus on performance, usability, and delivering a seamless user experience across devices.",
     "button": "",
     "galleryItems": [
 	  {
@@ -14,14 +14,14 @@
 	    "original": "/img/website-portfolio/coolairflorida.jpg",
 	    "thumbnail": "/img/website-portfolio/coolairflorida-thumb.jpg",
 	    "originalTitle": "Natal Air Conditioning",
-	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "description": "I supported the upkeep of a WordPress website by diagnosing and fixing bugs that impacted speed and usability, while enhancing features through plugin configurations and theme updates.",
 	    "link": "https://www.coolairflorida.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/dunlopmotorcycletires.jpg",
 	    "thumbnail": "/img/website-portfolio/dunlopmotorcycletires-thumb.jpg",
 	    "originalTitle": "Dunlop Motorcycle Tires",
-	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "description": "I ensured the stability of a WordPress website by addressing bugs and optimizing performance, and by integrating and adjusting features through plugins and updated themes.",
 	    "link": "https://www.dunlopmotorcycletires.com"
 	  },
 	  {
@@ -42,14 +42,14 @@
 	    "original": "/img/website-portfolio/flytropic.jpg",
 	    "thumbnail": "/img/website-portfolio/flytropic-thumb.jpg",
 	    "originalTitle": "Tropic Ocean Airways",
-	    "description": "I maintained and improved a WordPress website by fixing bugs that affected performance and user experience. I added and customized features using plugins and theme updates, keeping the site functional and up to date.",
+	    "description": "I optimized a WordPress website by fixing performance-related issues and improving usability, while extending its capabilities through plugin integration and theme updates.",
 	    "link": "https://flytropic.com"
 	  },
 	  {
 	    "original": "/img/website-portfolio/genious.jpg",
 	    "thumbnail": "/img/website-portfolio/genious-thumb.jpg",
 	    "originalTitle": "GeniouS Computers",
-	    "description": "I managed and enhanced a Drupal website by resolving issues that impacted performance and usability. I developed and tailored features using modules and theme adjustments to keep the site efficient and current.",
+	    "description": "Supported and optimized a Drupal site by diagnosing and resolving bugs while improving overall performance. Implemented and refined features via module integration and theme customization to maintain a stable, up-to-date platform.",
 	    "link": "https://www.genious.be"
 	  },
 	  {
@@ -77,7 +77,7 @@
 	    "original": "/img/website-portfolio/smxconventioncenter.jpg",
 	    "thumbnail": "/img/website-portfolio/smxconventioncenter-thumb.jpg",
 	    "originalTitle": "SMX Convention Center",
-	    "description": "I supported and optimized a Drupal site by troubleshooting bugs and improving overall performance. I also built and refined features through module integration and theme customization to keep the site reliable and up to date.",
+	    "description": "Maintained and optimized a Drupal website by resolving issues and enhancing performance. Developed and improved features through module integration and theme customization to ensure reliability and up-to-date functionality.",
 	    "link": "https://www.smxconventioncenter.com"
 	  },
 	  {

@@ -44,7 +44,4 @@ export const StyledContainer = styled("div")<{
   #middle p {
     text-align: left;
   }
-
-
-
 `;
