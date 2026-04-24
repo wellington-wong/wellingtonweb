@@ -32,7 +32,7 @@ const Home = () => {
             let abtCHeight = aboutRef.current.clientHeight;
 
             let totalHeight = midCHeight + misCHeight + abtCHeight;
-            let offsetTop = middleRef.current.offsetTop-120;
+            let offsetTop = middleRef.current.offsetTop-150;
             let next = "intro";
             switch (true) {
               case(window.scrollY > offsetTop && window.scrollY < (midCHeight+offsetTop)):
@@ -47,7 +47,6 @@ const Home = () => {
               default:
                 next = "";
             }
-
             // 🔑 ONLY update if changed
             if (inViewRef.current !== next) {
               inViewRef.current = next;
@@ -62,6 +61,7 @@ const Home = () => {
 
     window.addEventListener("scroll", handleChange);
     window.addEventListener("resize", handleChange);
+    handleChange();
 
     return ()=>{
       window.removeEventListener("scroll", handleChange);

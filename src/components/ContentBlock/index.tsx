@@ -45,7 +45,7 @@ const ContentBlock = forwardRef<HTMLDivElement, ContentBlockProps>(({
   };
 
   const icons = cloudIcons?.sort(()=>Math.random() - .8).map((logo, i) => {
-   return <StyledLink href={logo.url} target="_blank" rel="noreferrer" key={i}>
+   return <StyledLink href={logo.url} target="_blank" rel="noreferrer noopener" key={i}>
       <Image height="118" width="118" src={logo.path} />
     </StyledLink>
   })
@@ -116,8 +116,8 @@ const ContentBlock = forwardRef<HTMLDivElement, ContentBlockProps>(({
                           id: number
                         ) => {
                           return (
-                            <Col key={id} span={11}>
-                              <StyledLink href={item.href} target="_blank">
+                            <Col key={id}>
+                              <StyledLink href={item.href} target="_blank" rel="noopener noreferrer">
                                 <Image src={item.icon} width="68px" height="auto" />
                               </StyledLink>
                             </Col>

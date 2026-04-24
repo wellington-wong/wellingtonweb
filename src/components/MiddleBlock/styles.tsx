@@ -38,6 +38,7 @@ export const ImageGalleryCaption = styled("div")`
   padding: 1em 20px 0px 20px;
   border-radius: 10px;
   text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   @media only screen and (max-width: 768px) {
     width: 90%;

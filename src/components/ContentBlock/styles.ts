@@ -51,7 +51,7 @@ export const ServiceWrapper = styled("div")`
   max-width: 100%;
   > .ant-row {
     .ant-col {
-      padding-right: 20px;
+      margin-right: 20px;
     }
   }
 `;
