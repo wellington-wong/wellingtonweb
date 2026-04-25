@@ -29,6 +29,12 @@ export const StyledSpan = styled("span")`
 export const StyledRow = styled(Row)`
   flex-direction: ${({ direction }: { direction: string }) =>
     direction === "left" ? "row" : "row-reverse"};
+
+    .cloud-icon {
+      canvas {
+        opacity: 0.5
+      }
+    }
 `;
 
 export const ContentWrapper = styled("div")`

@@ -59,7 +59,7 @@ const ContentBlock = forwardRef<HTMLDivElement, ContentBlockProps>(({
           id={id}
           direction={direction}                 
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
+          <Col lg={11} md={11} sm={12} xs={24} className="cloud-icon">
             {id==='mission'&&icons?
               <Cloud options={{ wheelZoom: false, initial: [0.038, 0.038], outlineMethod: 'none', depth: 0.5, noMouse: true, frontSelect: true, freezeDecel: true }}>{ icons }</Cloud>:
               <Image src={image} width="100%" height="100%" />
