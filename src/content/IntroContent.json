@@ -3,11 +3,11 @@
   "text": "I specialize in creating intelligent, high-performance web and mobile applications powered by modern AI technologies—delivering fast, reliable, and user-focused solutions from concept to deployment.",
   "button": [
     {
-      "title": "View My Work",
+      "title": "View Projects",
       "scrollto": "middle"
     },
     {
-      "title": "Learn more",
+      "title": "Tech Stack",
       "color": "#fff",
       "scrollto": "mission"
     }
