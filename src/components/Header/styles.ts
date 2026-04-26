@@ -121,4 +121,8 @@ export const Span = styled("span")`
     text-underline-position: under;
     text-decoration: rgb(255, 130, 92) solid underline;
   }
+
+  > button {
+    box-shadow: none;
+  }
 `;

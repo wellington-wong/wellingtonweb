@@ -53,7 +53,7 @@ const Header = ({ t }: { t: TFunction }) => {
           onClick={() => scrollTo("contact")}
           className={(inViewId==='contact')?'active':''}
         >
-          <Span>
+          <Span className="contact-me-container">
             <Button>{t("Contact Me")}</Button>
           </Span>
         </CustomNavLinkSmall>
