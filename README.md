@@ -69,7 +69,7 @@ This portfolio is designed to:
 
 ## 📸 Preview
 
-![Homepage](public/img/screenshots/hero-scr.png)
+![Homepage](public/img/screenshots/intro-section.png)
 
 ---
 
