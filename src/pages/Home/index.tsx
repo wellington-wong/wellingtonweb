@@ -79,7 +79,7 @@ const Home = () => {
           content={IntroContent.text}
           button={IntroContent.button}
           icon="developer.svg"
-          image="hero-illustration-f5.png"
+          image="hero-illustration-f5.jpg"
           id="intro"
           ref={null}
         />

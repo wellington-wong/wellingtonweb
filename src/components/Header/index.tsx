@@ -69,7 +69,7 @@ const Header = ({ t }: { t: TFunction }) => {
             <LogoContainer to="/" aria-label="homepage">
               {/*<LogoH1>Wellington's</LogoH1>
               <LogoH3>Portfolio</LogoH3>*/}
-              <LogoImg src="/img/logo-v2-opt.png" />
+              <LogoImg src="/img/logo-v2-ref.png" />
             </LogoContainer>
           </CustomNavLinkSmall>
           <NotHidden>

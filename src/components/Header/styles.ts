@@ -36,6 +36,7 @@ export const LogoH3 = styled("h3")`
 
 export const LogoImg = styled("img")`
   width: 280px;
+  margin-top: 9px;
 `;
 
 export const NavLink = styled("div")`
