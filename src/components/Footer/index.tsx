@@ -1,12 +1,12 @@
 import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
-import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+//import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 import {
   Copyright,
   FooterSection,
-  Extra,
+  //Extra,
   Para,
   Language,
   NewLink,
@@ -47,11 +47,11 @@ const Footer = ({ t }: { t: TFunction }) => {
           </Row>
         </Container>
       </FooterSection>
-      <Extra>
+      {/*<Extra>
           <TawkMessengerReact
             propertyId="69d40991b0cccb1c3b0d06e6"
             widgetId="1jlnah6r7"/>
-      </Extra>
+      </Extra>*/}
     </>
   );
 };
