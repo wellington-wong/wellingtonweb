@@ -5,7 +5,7 @@ export const ScrollUpContainer = styled("div")<{
 }>`
   padding: 10px;
   position: fixed;
-  left: 50%;
+  right: 30px;
   bottom: 30px;
   z-index: 10;
   cursor: pointer;
@@ -15,8 +15,8 @@ export const ScrollUpContainer = styled("div")<{
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   visibility: ${(p) => (p.show ? "visible" : "hidden")};
-  opacity: ${(p) => (p.show ? "1" : "0")};
-  display: none;
+  opacity: 0;/*${(p) => (p.show ? "1" : "0")};*/
+  display: flex;
 
   &:hover,
   &:active,
