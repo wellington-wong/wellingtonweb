@@ -29,6 +29,10 @@ export const StyledContainer = styled("div")<{
 
   #intro, #middle, #about, #mission, #product, #contact {
     padding-top: 10rem;
+
+    @media only screen and (max-width: 768px) {
+     padding-top: 5.8rem;
+    }
   }
 
   #mission canvas {
