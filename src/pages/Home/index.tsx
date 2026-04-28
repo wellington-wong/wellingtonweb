@@ -1,4 +1,5 @@
 import { lazy, Suspense, useContext, useEffect, useRef } from "react";
+import Clarity from "@microsoft/clarity";
 import { AppContext } from "../../context/AppContext"
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
@@ -14,6 +15,7 @@ const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 const galleryItems = MiddleBlockContent.galleryItems.sort(()=>Math.random() - .8);
 const Home = () => {
+  Clarity.init("wisod5y80f");
   const { setContextData } = useContext(AppContext);
 
   const middleRef = useRef<HTMLDivElement>(null);
